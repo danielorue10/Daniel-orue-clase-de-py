@@ -13,6 +13,6 @@ def login():
     password = data.get('password')
 
     if user == "daniel" and password == "123unida":
-        return jsonify({"code": 200, "message": "Login OK", "action": "grant_access"})
+        return jsonify({"code": 200, "message": "Login OK", "action": "acceso concedido"})
     else:
-        return jsonify({"code": 401, "message": "Credenciales inválidas", "action": "deny_access"})
+        return jsonify({"code": 401, "message": "Credenciales inválidas", "action": "denegar_acceso"})
